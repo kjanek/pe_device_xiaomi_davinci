@@ -6,7 +6,7 @@
     "remote": "github"
   },
   {
-    "repository": "vendor_xiaomi_davinci",
+    "repository": "kjanek/vendor_xiaomi_davinci",
     "target_path": "vendor/xiaomi/davinci",
     "branch": "ten"
   },
@@ -17,14 +17,8 @@
     "remote": "github"
   },
   {
-    "repository": "packages_apps_PixelLiveWallpaper",
-    "target_path": "packages/apps/PixelLiveWallpaper",
-    "branch": "ten",
-    "remote": "pixel-gitlab"
-  },
-  {
-    "repository": "vendor_MiuiCamera",
+    "repository": "RealAkito/vendor_miuicamera",
     "target_path": "vendor/MiuiCamera",
-    "branch": "ten-anx-raphael"
+    "branch": "master"
   }
 ]
