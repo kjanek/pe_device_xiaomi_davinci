@@ -5,4 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_davinci.mk
+    $(LOCAL_DIR)/cos_davinci.mk
+
+COMMON_LUNCH_CHOICES := \
+    cos_davinci-user \
+    cos_davinci-userdebug \
+    cos_davinci-eng

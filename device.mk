@@ -20,6 +20,7 @@ PRODUCT_CHARACTERISTICS := nosdcard
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -62,6 +63,9 @@ PRODUCT_PACKAGES += \
     vendor.display.config@1.11
 
 # Fingerprint
+PRODUCT_COPY_FILES += \
+    vendor/cos/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:system/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
+
 PRODUCT_PACKAGES += \
     lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_davinci
 
@@ -170,7 +174,3 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
-
-# Wallpapers
-PRODUCT_PACKAGES += \
-    PixelLiveWallpaperPrebuilt
