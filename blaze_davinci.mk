@@ -6,16 +6,16 @@
 
 $(call inherit-product, device/xiaomi/davinci/device.mk)
 
-# Inherit some common AOSiP stuff.
-$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
+# Inherit some common Blaze AOSP stuff.
+$(call inherit-product, vendor/blaze/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := davinci
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := aosip_davinci
+PRODUCT_NAME := blaze_davinci
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Inherit from custom vendor
-$(call inherit-product, vendor/MiuiCamera/main.mk)
+$(call inherit-product, vendor/MiuiCamera/config.mk)
