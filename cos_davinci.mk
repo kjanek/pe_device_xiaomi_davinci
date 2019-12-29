@@ -19,4 +19,4 @@ PRODUCT_NAME := cos_davinci
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Inherit from custom vendor
-$(call inherit-product, vendor/MiuiCamera/main.mk)
+$(call inherit-product, vendor/MiuiCamera/config.mk)
