@@ -1,8 +1,8 @@
 [
   {
-    "repository": "vantoman/kernel_xiaomi_davinci",
+    "repository": "davinci-dev/android_kernel_xiaomi_davinci",
     "target_path": "kernel/xiaomi/davinci",
-    "branch": "test",
+    "branch": "lineage-17.0",
     "remote": "github"
   },
   {
