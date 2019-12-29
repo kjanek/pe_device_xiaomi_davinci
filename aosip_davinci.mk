@@ -6,7 +6,8 @@
 
 $(call inherit-product, device/xiaomi/davinci/device.mk)
 
-# Inherit some common AOSiP stuff.
+# Inherit some common Derpfest stuff.
+TARGET_GAPPS_ARCH := arm64
 $(call inherit-product, vendor/aosip/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
