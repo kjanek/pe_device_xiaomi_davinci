@@ -4,6 +4,16 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# OpenGapps
+GAPPS_VARIANT := mini
+GAPPS_PRODUCT_PACKAGES += ContactsGoogle DialerGoogle ProjectFi GCS 
+GAPPS_EXCLUDED_PACKAGES := Gmail
+GAPPS_FORCE_PACKAGE_OVERRIDES := true
+GAPPS_FORCE_MMS_OVERRIDES := true
+GAPPS_FORCE_DIALER_OVERRIDES := true
+GAPPS_FORCE_BROWSER_OVERRIDES := true
+GAPPS_FORCE_MATCHING_DPI := true
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
@@ -171,3 +181,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+# OpenGapps
+$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)

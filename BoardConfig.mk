@@ -4,6 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# OpenGapps
+WITH_DEXPREOPT := true
+
 BUILD_BROKEN_DUP_RULES := true
 
 BOARD_VENDOR := xiaomi
