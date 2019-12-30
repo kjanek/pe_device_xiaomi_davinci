@@ -17,8 +17,8 @@
     "remote": "github"
   },
   {
-    "repository": "RealAkito/vendor_miuicamera",
+    "repository": "kjanek/vendor_miuicamera",
     "target_path": "vendor/MiuiCamera",
-    "branch": "master"
+    "branch": "ten-anx"
   }
 ]
